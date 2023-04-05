@@ -1,0 +1,9 @@
+{
+  "project_name": "Project name",
+  "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+  "description": "Project description",
+  "author_name": "Arjo Hooimeijer",
+  "domain_name": "gmail.com",
+  "email": "{{ cookiecutter.author_name.lower() | trim() |replace(' ', '-') }}@{{ cookiecutter.domain_name.lower() | trim() }}",
+  "version": "0.1.0"
+}
