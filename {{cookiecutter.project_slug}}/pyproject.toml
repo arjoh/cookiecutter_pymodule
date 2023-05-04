@@ -42,4 +42,4 @@ profile = "black"
 line_length = 79
 
 [tool.pytest.ini_options]
-addopts = "--cov=linx_api --cov-report=term --cov-report=xml"
+addopts = "--cov={{cookiecutter.project_slug}} --cov-report=term --cov-report=xml"
