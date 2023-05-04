@@ -16,5 +16,6 @@
 
     $ git init
     $ poetry run pre-commit install
+    $ git add .
     $ poetry run pre-commit run --all-files
 
