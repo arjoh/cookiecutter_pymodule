@@ -7,6 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+{%- if cookiecutter.use_argparse == 'y' %}
+argparse = "^1.4.0"
+{%- endif %}
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"

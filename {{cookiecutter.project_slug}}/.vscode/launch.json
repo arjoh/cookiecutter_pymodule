@@ -5,11 +5,25 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: Module",
+            "type": "python",
+            "request": "launch",
+            "module": "{{cookiecutter.project_slug}}",
+            "justMyCode": true,
+{%- if cookiecutter.use_argparse == 'y' %}            
+            "args": [
+                "filename",
+                "--count",
+                "10",
+                "--verbose"
+            ],
+{%- endif %}
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal",
             "justMyCode": true
         }
     ]
