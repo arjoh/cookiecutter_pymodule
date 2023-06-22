@@ -10,7 +10,7 @@
             "request": "launch",
             "module": "{{cookiecutter.project_slug}}",
             "justMyCode": true,
-{%- if cookiecutter.use_argparse == 'y' %}            
+{%- if cookiecutter.use_argparse == 'y' %}
             "args": [
                 "filename",
                 "--count",

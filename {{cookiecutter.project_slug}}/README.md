@@ -12,10 +12,11 @@
 
     $ poetry install
 
-### Init git and install pre-commit
-
+### I{% if cookiecutter.init_git != 'y' %}nit git and i{% endif %}nstall pre-commit
+{% if cookiecutter.init_git != 'y' %}
     $ git init
-    $ poetry run pre-commit install
     $ git add .
+{%- endif %}
+    $ poetry run pre-commit install
     $ poetry run pre-commit run --all-files
 
