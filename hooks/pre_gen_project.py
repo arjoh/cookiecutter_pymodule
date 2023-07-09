@@ -1,5 +1,1 @@
-# print(
-#     """Cookiecutter context:
-# {{ cookiecutter|jsonify }}
-# """
-# )
+context = {{ cookiecutter|jsonify }}
