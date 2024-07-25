@@ -1,13 +1,13 @@
 {
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length",
-        "79"
-    ],
     "python.testing.pytestEnabled": true,
     "python.testing.cwd": "./tests",
     "python.testing.pytestArgs": [
         "-c",
         "pytest.vscode.ini"
-    ],    
+    ],
+    "black-formatter.args": [
+        "--line-length",
+        "79"
+    ],
+    "editor.defaultFormatter": "ms-python.black-formatter",
 }
