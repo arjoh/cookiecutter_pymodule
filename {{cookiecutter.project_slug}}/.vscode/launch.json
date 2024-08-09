@@ -25,6 +25,19 @@
             "request": "launch",
             "program": "${file}",
             "justMyCode": true
+        },
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "justMyCode": true,
+            "purpose": [
+                "debug-test"
+            ],
+            "presentation": {
+                "hidden": true,
+            }
         }
     ]
 }
